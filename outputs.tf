@@ -1,12 +1,12 @@
-output "The unique identifier for the database instance (CRN)" {
+output "db_crn_id" {
   value = "${ibm_database.db_instance.id}"
 }
-output "Database connection string" {
+output "db_connection_string" {
   value = "http://${ibm_database.db_instance.connectionstrings[0].name}"
 }
-output "The user ID of the database administrator" {
+output "db_admin_userid" {
   value = "${ibm_database.db_instance.adminuser}"
 }
-output "The database version" {
+output "db_version" {
   value = "${ibm_database.db_instance.version}"
 }
