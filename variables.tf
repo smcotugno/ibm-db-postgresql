@@ -11,7 +11,7 @@ variable "db_name" {
   description = "Database name"
 }
 variable "resource_group_name" {
-  default = "test_cos"
+  default = "default"
   description = "IBM Cloud Resource Group Name"
 }
 variable "db_admin_password" {
